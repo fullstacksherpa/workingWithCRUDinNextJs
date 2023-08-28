@@ -11,6 +11,10 @@ export async function GET(){
 }
 
 
+
+
+
+
 export async function DELETE(request:Request){
     const {id}:Partial<Todo> = await request.json()
     if (!id) return NextResponse.json({'message': 'Todo id is required'})
